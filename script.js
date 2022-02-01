@@ -98,10 +98,50 @@ back.addEventListener("click", () =>{
 
 
  document.querySelector(".up").addEventListener("click", ()=>{
-     document.querySelector(".snap-mandaotry").scrollTo(0, 0)
+     document.querySelector(".snap-y").scrollTo(0, 0)
+
+     
+     document.querySelector(".vDot1").classList= "h-2 rounded-full transition w-2 vDot1 bg-[#a500a588]"
+
+     document.querySelector(".vDot2").classList= "h-2 rounded-full vDot2 transition  w-2 border border-gray-400  bg-white "
+
+ 
+ 
+
+
  })
 
 
  document.querySelector(".down").addEventListener("click", ()=>{
-    document.querySelector(".snap-mandaotry").scrollTo(0, 500)
+    document.querySelector(".snap-y").scrollTo(0, 260)
+
+
+    document.querySelector(".vDot1").classList= "h-2 rounded-full vDot1 transition  w-2 border border-gray-400  bg-white "
+     document.querySelector(".vDot2").classList= "h-2 rounded-full transition w-2 vDot2 bg-[#a500a588]"
+     
+
 })
+
+
+function scrollFunction() {
+    if (document.querySelector(".snap-y").scrollTop > 260) {
+        document.querySelector(".vDot1").classList= "h-2 rounded-full vDot1 transition  w-2 border border-gray-400  bg-white "
+     document.querySelector(".vDot2").classList= "h-2 rounded-full transition w-2 vDot2 bg-[#a500a588]"
+     
+      }
+
+
+      else{
+        document.querySelector(".vDot1").classList= "h-2 rounded-full transition w-2 vDot1 bg-[#a500a588]"
+
+        document.querySelector(".vDot2").classList= "h-2 rounded-full vDot2 transition  w-2 border border-gray-400  bg-white "
+   
+     
+      }
+
+      
+}
+
+
+document.querySelector(".snap-y").onscroll = function() {scrollFunction()};
+
