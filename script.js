@@ -94,3 +94,14 @@ back.addEventListener("click", () =>{
     }
  
  })
+
+
+
+ document.querySelector(".up").addEventListener("click", ()=>{
+     document.querySelector(".snap-mandaotry").scrollTo(0, 0)
+ })
+
+
+ document.querySelector(".down").addEventListener("click", ()=>{
+    document.querySelector(".snap-mandaotry").scrollTo(0, 500)
+})
