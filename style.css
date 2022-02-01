@@ -39,11 +39,11 @@ body{
 
 
 
-.snap-mandaotry::-webkit-scrollbar{
+.snap-y::-webkit-scrollbar{
     display: none;
 }
 
-.snap-mandaotry{
+.snap-y{
     -ms-overflow-style: none; 
      scrollbar-width: none;
 }
