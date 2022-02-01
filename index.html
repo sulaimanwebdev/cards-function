@@ -7,12 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
+    
     <title>Cards</title>
 </head>
 <body>
     <div class="flex items-center justify-center">
-<div class="card overflow-hidden mt-20 relative w-[360px] h-[480px] bg-white  rounded">
-
+<div class="card relative overflow-hidden mt-20 relative w-[360px] h-[480px] bg-white  rounded">
 
 
 
@@ -132,9 +132,19 @@
 
 <div class="second py-5 tranform translate-x-full h-[424px] overflow-hidden absolute left-0 top-0 tranform transition  px-3">
     <div class="text-base leading-5 font-bold mx-auto text-center mx-auto pb-5 bg-white">Choose QR Code</div>
- 
-    <div class="h-full overflow-y-scroll  w-full snap-y  snap mandaotry flex gap-20 flex-col">
-     <div class="snap-start flex items-center justify-center   w-full">
+
+
+
+    <div class="up fixed top-1/2 z-50 left-[165px] cursor-pointer bg-white px-2 h-fit "><i class="fal font-bold fa-chevron-left text-3xl text-gray-500"></i></div>
+
+    <div class="down fixed top-1/2 z-50 right-[165px] cursor-pointer bg-white px-2 h-fit "><i class="fal font-bold fa-chevron-right text-3xl text-gray-500"></i></div>
+
+
+    <div class="h-full  overflow-y-scroll scroll-smooth  w-full snap-y  snap-mandaotry flex gap-20 flex-col">
+    
+
+
+        <div class="snap-start flex items-center justify-center   w-full">
         <label htmlFor="normalQR" class="flex qr overflow-hidden transform translate-y-5 h-full items-center relative justify-center">
             <img src="normal.jpg" class="w-full" alt="QR Image">
             <div class="absolute hidden  QRoverlay left-0 top-0 w-full h-full rounded flex items-center justify-center "><i class="far text-white fa-check text-4xl"></i></div>
@@ -201,6 +211,8 @@
 
 
   
+
+    
 
     <script src="script.js"></script>
 </body>
