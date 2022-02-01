@@ -133,19 +133,23 @@
 <div class="second py-5 tranform translate-x-full h-[424px] overflow-hidden absolute left-0 top-0 tranform transition  px-3">
     <div class="text-base leading-5 font-bold mx-auto text-center mx-auto pb-5 bg-white">Choose QR Code</div>
 
+     <div class="verticalIndicators absolute left-0 mx-auto top-[45px] bg-white z-50 pb-3 w-full mb-3 flex items-center  transition gap-2 justify-center">
+            <div class="h-2 rounded-full vDot1 transition  w-2 bg-[#a500a588]"></div>
+            <div class="h-2 rounded-full vDot2 border transition  border-gray-400 w-2 bg-white"></div>
 
+     </div>
 
     <div class="up absolute top-1/2 z-50 left-0 cursor-pointer bg-white px-2 h-fit "><i class="fal font-bold fa-chevron-left text-3xl text-gray-500"></i></div>
 
     <div class="down absolute top-1/2 z-50 right-0 cursor-pointer bg-white px-2 h-fit "><i class="fal font-bold fa-chevron-right text-3xl text-gray-500"></i></div>
 
 
-    <div class="h-full  overflow-y-scroll scroll-smooth  w-full snap-y  snap-mandaotry flex gap-20 flex-col">
+    <div class="h-full  overflow-y-scroll scroll-smooth  w-full snap-y  snap-mandatory ">
     
 
 
-        <div class="snap-start flex items-center justify-center   w-full">
-        <label htmlFor="normalQR" class="flex qr overflow-hidden transform translate-y-5 h-full items-center relative justify-center">
+        <div class="snap-start flex items-center justify-center  mb-36  w-full">
+        <label htmlFor="normalQR" class="flex qr overflow-hidden   items-center relative justify-center">
             <img src="normal.jpg" class="w-full" alt="QR Image">
             <div class="absolute hidden  QRoverlay left-0 top-0 w-full h-full rounded flex items-center justify-center "><i class="far text-white fa-check text-4xl"></i></div>
             <input  value="true" class="hidden" type="radio" name="Radio Selected" id="normalQR">
@@ -153,10 +157,10 @@
         </label>
      </div>
 
-     <div class="snap-start flex items-center justify-center     w-full">
+     <div class="snap-start flex items-center justify-center pb-7    w-full">
          
      <label htmlFor="advanceQR" class="flex  qr overflow-hidden  items-center relative justify-center">
-        <img src="advance.jpg" class="w-full position-center  object-cover" alt="QR Image">
+        <img src="advance.jpg" class="w-full " alt="QR Image">
         <div class="absolute hidden  QRoverlay left-0 top-0 w-full h-full rounded flex items-center justify-center "><i class="far text-white fa-check text-4xl"></i></div>
         <input  value="true" class="hidden" type="radio" name="Radio Selected" id="advanceQR">
        
