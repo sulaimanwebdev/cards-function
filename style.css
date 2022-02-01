@@ -36,3 +36,14 @@ body{
     width: calc(100% - 70px);
     
 }
+
+
+
+.snap-mandaotry::-webkit-scrollbar{
+    display: none;
+}
+
+.snap-mandaotry{
+    -ms-overflow-style: none; 
+     scrollbar-width: none;
+}
